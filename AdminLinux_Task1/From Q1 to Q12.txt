@@ -1,0 +1,57 @@
+1- Red Hat - Keil - Fedora - Ubuntu
+
+2- man command is very useful comman which is used to show us the reference manuels for commands but only used with External commands only.
+
+3-  rm >>> is command that remove Files and Directories it is also used to remove a directory with is files in using recursive tag ( rm -r mydir)  this will remove mydir and its files
+    rmdir >>> only used to remove Empty Directories but it can remove non Empty Directory using alsi reursive tag (rmdir -r mydir)
+4- (we are in /home/youssef) >>>>> 
+    mkdir dir1
+    mkdir docs
+    (director Documents is already exist at my home so i will not create Documents Directory)
+    *Creating dir11 and dir12 Directories inside dir1 Directory*
+    cd dir1
+    mkdir dir11
+    mkdir dir12
+    *Creating file1 dir11 Directory*
+    cd dir11
+    touch file1
+    *Creating mycv inside docs Directory*
+    cd ../docs
+    touch mycv
+    *Creating OldFiles inside Documents Directory*
+    cd ../Documents
+    touch OldFiles
+  4-a (Removing dir11 with rmdir in one step) >>>> when using rmdir command to remove dir11 it give ms "Failed to remove : Directory is not Empty" So the we can overcome this using
+       Recursive Tag so the command line will be as following : rmdir -r dir11 
+       Note : we should be at the directory dir1 to get the chance removing dir11 otherwise the system will not recognise dir11
+
+  4-b it gives me "Failed to remove OldFiles : Not a Directory"
+
+  4-c Absloute Path >>>> Must be start with root directory which will be : /home/user/docs/mycv
+      Relative Path >>>> docs/mycv
+
+5- cp /etc/passwd ~/mypasswd
+
+6- rename using mv command >>>> mv mypasswd oldpasswd
+
+7- 7.1- cd ~
+   7.2- cd
+   7.3- cd /home/youssef
+   7.4- cd ../../home/youssef
+
+8- ls /usr/bin/w*
+
+9- type command is internal command that used to show us the type of any command (Internal - External - Hashed) and information about the commands according to shell
+   for Example if i write type cd it gives me "cd is a shell builtin" that means that cd is Internal Command to shell.
+
+10- find /usr/bin -maxdepth 1 -type f -name 'c*' | head -n 2 >>>> Not by myself i searched to get it
+    find /usr/bin >> start searching inside this path 
+    -maxdepth 1 >>> pervent the finding to go through subdirectories it will be only limited to find in the files and directories in this path
+    -type f >>>> to excludes the finding on directories by this i forced him to find only in files not files and directories
+    -name c >>>> means that finding will be limited to the files starting with 'c' we can say that it is a filter
+    head -n 2 >>>> limits the output of the find to only for 2 lines which leads that the output will be only 2 types as required
+
+11- man -k "readfile"
+    it gives me "nothing appropriate"
+
+12- apropos command is similer command to man command it is also considered as one of the help commands but not commonly used.
