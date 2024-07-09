@@ -132,6 +132,9 @@ We can't generate a hard link in this case due to passwd is a directory not a fi
 9-
 echo \ command prints > which means that the shell is wating an input from the user
 to change > to be : 
-we can use Environment variable PS1 as following
+we can use Environment variable PS1 as following:
+
+![Screenshot from 2024-07-10 01-44-57](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/14b2b8d7-23ad-49f1-b305-98526d4211fb)
+
 
 
