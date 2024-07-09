@@ -41,5 +41,18 @@ to make sure that they had been redirected we can use command more to scroll and
 ![Screenshot from 2024-07-09 23-02-47](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/64ebe157-1dde-412b-b648-79e244145f5c)
 
 2-
+we can edit our general .bashrc file to insert an statement that display the date once we open the terminal as following:
+
+![Screenshot from 2024-07-09 23-19-52](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/03087f42-3c1b-4934-84b6-fd30a8526a15)
+
+To tes it we can open new terminal as following :
+
+![Screenshot from 2024-07-09 23-20-56](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/18c05c17-88d9-4f5f-96de-d21535629d49)
+
+
+3-
+
+
+
 
 
