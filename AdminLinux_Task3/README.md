@@ -78,7 +78,60 @@ The output :
 
 5-
 
+using locate command i searched on .profile on the whole system as following :
+```
+locate .profile
+```
+![Screenshot from 2024-07-10 00-54-46](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/cbd7284c-a7ce-4ff0-b10d-6f2096c8eb9c)
+
+6-
+
+To prind id of each file in a directory we use
+ls -i <filename>
+or
+ls --inode <filename>
+in our case :
+a- for /
+```
+ls -i /
+```
+```
+ls --inode /
+```
+![Screenshot from 2024-07-10 01-14-01](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/48d2e2ca-fef6-42d2-a5e7-3fdc4d98cc56)
+
+b- for /etc 
+```
+ls -i /etc
+```
+```
+ls --inode /etc
+```
+
+![Screenshot from 2024-07-10 01-12-04](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/a1d6e78f-d8ee-4403-b8e2-8fd7f6d9b529)
+
+c- for /etc/hosts
+
+```
+ls -i /etc/hosts
+```
+```
+ls --inode /etc/hosts
+```
+![Screenshot from 2024-07-10 01-17-18](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/fe74a34c-9cab-41b8-9f95-3b6939848e48)
 
 
+7-
+
+![Screenshot from 2024-07-10 01-34-01](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/ad52e92f-760d-4d15-8d4d-aee3cef96f7a)
+
+8-
+
+We can't generate a hard link in this case due to passwd is a directory not a file and this conlicts with the concpet
+
+9-
+echo \ command prints > which means that the shell is wating an input from the user
+to change > to be : 
+we can use Environment variable PS1 as following
 
 
