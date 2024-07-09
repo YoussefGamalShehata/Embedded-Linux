@@ -130,6 +130,7 @@ ls --inode /etc/hosts
 We can't generate a hard link in this case due to passwd is a directory not a file and this conlicts with the concpet
 
 9-
+
 echo \ command prints > which means that the shell is wating an input from the user
 to change > to be : 
 we can use Environment variable PS1 as following:
