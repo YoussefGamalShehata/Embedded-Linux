@@ -51,6 +51,32 @@ To tes it we can open new terminal as following :
 
 
 3-
+To Count the Number of words in a file we can use the following command:
+```
+ws -w filename
+```
+but in our case we need to coung the number of user commands which can be done with samt concept but according to directories and files as following:
+```
+ls /usr/bin | wc -w
+```
+![Screenshot from 2024-07-10 00-09-42](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/3c91ab2a-8125-4f23-8029-8bc2b444d100)
+
+4-
+The output of :
+```
+cat f1 | cat f2
+```
+will display the content of f2 only as following 
+
+![Screenshot from 2024-07-10 00-29-33](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/7f3dee7b-13d3-48d7-88d5-cc0741e584d0)
+
+![Screenshot from 2024-07-10 00-29-45](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/1fb679e2-9547-4b9e-bb68-ca78134b4a98)
+
+The output :
+
+![Screenshot from 2024-07-10 00-32-02](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/3aa480f7-7ea7-4233-9a81-b84399caa1eb)
+
+5-
 
 
 
