@@ -58,7 +58,7 @@ In the if condtion i used the **-f** file condition to check if it is a file or 
 if it is true contion :
         the file will be moved to **others** directory
 
-*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
 ## Testing The Script
 1- 
 First of All we have a directory called **Source** in the this path **/home/youssef/ITI_EmbeddedLinuxRepo/Embedded-Linux/Tasks/Task1/Source**
