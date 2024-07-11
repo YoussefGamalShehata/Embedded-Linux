@@ -1,6 +1,6 @@
-#Task_1
+# Task_1
 
-##Scripting
+## Scripting
 
 - As the above script (File_organizer.sh) and the image below here is the script by which we can organize a desired directory in our file system
 
@@ -54,10 +54,36 @@ done
 in the first line **for file in ./\***
 I'm trying to loop in the current directory using **.** with everthing exist in it using **\***
 
+In the if condtion i used the **-f** file condition to check if it is a file or not
+if it is true contion :
+        the file will be moved to **others** directory
+
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+## Testing The Script
+1- 
+First of All we have a directory called **Source** in the this path **/home/youssef/ITI_EmbeddedLinuxRepo/Embedded-Linux/Tasks/Task1/Source**
+This directory contains several files of different types as follows:
+
+![Screenshot from 2024-07-11 14-05-17](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/b0468316-b315-4f7d-89a6-de4cccc0bcce)
 
 
+2-
+Running the Above script for this Directory to see what will happen :
+
+![Screenshot from 2024-07-11 14-06-56](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/f4eb243e-b43e-4e7c-bae1-fdb4c03d4d18)
+
+3-
+Now i will go to the **Source** Directory to see what happens inside it :
+
+![Screenshot from 2024-07-11 14-07-37](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/17767095-7648-44d1-a131-d5d8e08b8011)
 
 
+As we see in the above image 3 subdirectories have beed created 
+
+4-
+Now i will go inside each one of them to make sure that the right files moved in the right directories
+
+![Screenshot from 2024-07-11 14-08-26](https://github.com/YoussefGamalShehata/Embedded-Linux/assets/152656762/c5b85c9e-26a2-4bdf-b50c-99f859fc77cd)
 
 
 
