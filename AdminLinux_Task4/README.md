@@ -1,4 +1,4 @@
-# Task4
+![image](https://github.com/user-attachments/assets/51b7dde4-ba13-435b-89dd-34c70d236a63)# Task4
 ## Section 1 :
 ### Thinking Then Scripting:
 
@@ -23,7 +23,7 @@ In this stage we are gonna to add the created user to be a member inside the new
 
 ![Screenshot from 2024-07-12 03-10-39](https://github.com/user-attachments/assets/321eb2a4-b00f-456c-b1b6-2bccfbe88667)
 
-## -------------------------------------------------------------------------------------------------------------------------------------
+## ----------------------------------------------------------------------------------------------------------------------------
 ### Testing The Script :
 1-
 
@@ -48,5 +48,97 @@ Check the **/etc/passwd** to see my new user exist or not
 Check the **/etc/group** to see my new group exist or not and also the adding of the new user happened or not 
 
 ![Screenshot from 2024-07-12 03-15-43](https://github.com/user-attachments/assets/b86cc13a-5ad6-4447-ba7a-7b2f27388d5c)
+
+## ----------------------------------------------------------------------------------------------------------------------------
+## Section 2
+1- 
+
+using the next command:
+
+  ```
+  sudo groupadd -g 30000 pgroup
+  ```
+
+![Screenshot from 2024-07-12 04-04-18](https://github.com/user-attachments/assets/a00584cc-7b93-4cdb-b32d-20028ae90631)
+
+2-
+
+using the expiredate option for the user 
+```
+sudo usermod --expiredate 1 Joe
+```
+3-
+
+```
+sudo userdel Joe
+```
+
+4-
+
+```
+sudo groupdel Shehata_Family
+
+```
+
+5-
+
+**useradd** : 
+
+is low level command using it just create the user but does not create its home directory or any of the files that needed for the configuration for each user you need to do it by you own
+we can use some options with it as follows:
+```
+sudo useradd -m Joe
+```
+this creates the home directory without the need of you go and do it we can summrize that it is not user-friendly as much
+
+**adduser**: 
+is high level command it creates the home directory automatically without any additional options also copy the meta data from **/etc/skel** 
+in addition to adduser creates the user with more information and details about the creator and asking him to fill a block of personal data which seem that it is better that **useradd**
+we can say that it is user-friendly that **useradd**
+
+Here is a created user using **useradd**
+```
+sudo useradd Mohamed
+```
+Mohamed's home directory is not created yet
+
+![Screenshot from 2024-07-12 04-18-37](https://github.com/user-attachments/assets/95caba58-a8c4-40fe-98e5-8807da915dc3)
+
+
+Here is a created user using **adduser**
+```
+sudo adduser Fady
+```
+Fady's home directory is now created Successfully
+
+![Screenshot from 2024-07-12 04-21-45](https://github.com/user-attachments/assets/d15ddbf4-253e-4efa-8b5c-0f143c21e58b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
