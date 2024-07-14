@@ -9,6 +9,10 @@
   
    It is the concept of seeing **performance** and **behavior** that affects **real hardware resources**
    When you say you are doing simulation, you should keep in mind that your program will be taken into account along      with how you build its behavior with the hardware resources you are emulating
+
+  **Simulation** :
+
+  
   
 - **What do we need ?**
   
