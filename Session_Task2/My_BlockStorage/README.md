@@ -32,7 +32,9 @@
         2- File system Algorithm is ext4
         3- Not Bootable Partition
 
+  **Optional** : mount the created block storage to our root 
 
+## -------------------------------------------------------------------------------------------------------------
 
 
 
