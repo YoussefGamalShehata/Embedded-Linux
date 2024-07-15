@@ -81,12 +81,35 @@ Now we want to force the loop device to deal with the **sd.img** as it is a bloc
 ```
 losetup -f --show --partscan sd.img
 ```
+**this command says :**
+
+find an empty loop device for sd.img and deal with it to be as a block storage
+
 As you see in the image below **loop13** is selected to be the loop device that represents our file **sd.img** and in the path of **/dev/** we see that **loop13**
 became has 2 partitions **loop19p1** and **loop13p2**
+
 ![62c9137a-8cc8-47d2-b6d2-d576421c0d67](https://github.com/user-attachments/assets/33183223-446c-415d-846f-915cca55aed3)
 
+At this point, we have a block storage that has internal 2 partitions but without any file system algorithm so the next step is to apply real file system algorithms inside them
+**using the following commands :**
+**boot Partition**:
+```
+mkfs.vfat -f 16 -n boot /dev/loop13p1
+```
+
+**rootfs Partition**:
+```
+mkfs.ext4 -L  rootfs /dev/loop13p2
+```
+
+![5b1b73f3-c750-43a1-89b4-61db6e3311c4](https://github.com/user-attachments/assets/93fa975f-bf86-468c-87d5-f7fec6b7c574)
 
 
+
+## Ensuring that our partitions have been exist 
+
+
+![768e4261-4c22-4c9a-88fc-befac6eb6db3](https://github.com/user-attachments/assets/ab8920c5-6118-42d8-987d-e146ddbf6b81)
 
 
 
