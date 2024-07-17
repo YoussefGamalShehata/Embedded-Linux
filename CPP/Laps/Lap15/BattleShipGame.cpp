@@ -45,7 +45,6 @@ public:
 
         // Increment Current Gusses
         Gusses++;
-        std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
         // we need to get correct x and y
         for (int i = 0; i < 5; i++)
         {
@@ -62,29 +61,35 @@ public:
         if ((x == True_X) && (y = True_Y))
         {
             std::cout << "You are Insane !! , You got it easy\n";
-            ret_val = true;
+            return true;
         }
         else if ((x == True_X - 1) && (y = True_Y))
         {
             std::cout << "You are in the Right column and near to actual row\n";
+            return false;
         }
         else if ((x > 4) || (y > 4))
         {
             std::cout << "You are out of bonds\n";
+            return false;
         }
         else if ((x == True_X) && (y = True_Y - 1))
         {
             std::cout << "You are in the Right Row and near to actual Column\n";
+            return false;
         }
         if (BattleShip_GameOver())
         {
             std::cout << "No More Gusses For You, GAME OVERR !!\n";
+            return false;
         }
         else
         {
             std::cout << "Oh No!!,You are away,Try Again\n";
+            return false;
         }
-        return ret_val;
+        std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
+        return false;
     }
     bool BattleShip_GameOver() const
     {
