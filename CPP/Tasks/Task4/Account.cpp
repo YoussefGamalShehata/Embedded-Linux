@@ -24,8 +24,6 @@ Account::Account()
     m_no0fAccounts++; // Increment the total number of accounts
 }
 
-// Public static member functions
-
 int Account::getNoOfAccounts()
 {
     return m_no0fAccounts;
@@ -55,7 +53,6 @@ void Account::displayAccountsInfos()
     std::cout << "Total number of withdrawals: " << m_totalNbWithdrawals << std::endl;
 }
 
-// Constructor with initial deposit
 Account::Account(int initial_deposit)
     : m_accountIndex(m_no0fAccounts + 1),
       m_amount(initial_deposit),
@@ -67,7 +64,6 @@ Account::Account(int initial_deposit)
     m_totalNbDeposits++;
 }
 
-// Destructor
 Account::~Account()
 {
     m_no0fAccounts--;
