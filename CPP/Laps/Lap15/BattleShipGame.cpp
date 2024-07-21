@@ -3,7 +3,6 @@
 #include <array>
 class BattleShip
 {
-private:
     std::array<std::array<int, 5>, 5> Locations;
     int Gusses = 0;
     const int MaxGusses;
@@ -63,29 +62,34 @@ public:
             std::cout << "You are Insane !! , You got it easy\n";
             return true;
         }
-        else if ((x == True_X - 1) && (y = True_Y))
+        else if ((x == (True_X - 1)) && (y = True_Y))
         {
             std::cout << "You are in the Right column and near to actual row\n";
+            std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
             return false;
         }
         else if ((x > 4) || (y > 4))
         {
             std::cout << "You are out of bonds\n";
+            std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
             return false;
         }
         else if ((x == True_X) && (y = True_Y - 1))
         {
             std::cout << "You are in the Right Row and near to actual Column\n";
+            std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
             return false;
         }
         if (BattleShip_GameOver())
         {
             std::cout << "No More Gusses For You, GAME OVERR !!\n";
+            std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
             return false;
         }
         else
         {
             std::cout << "Oh No!!,You are away,Try Again\n";
+            std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
             return false;
         }
         std::cout << "You have " << MaxGusses - Gusses << " Times to try\n";
