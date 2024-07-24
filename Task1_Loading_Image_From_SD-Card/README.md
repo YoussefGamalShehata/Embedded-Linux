@@ -60,7 +60,7 @@ md 0x60003000
 
 7- **boot** Partition content
 
-- Note : due to we are working with Qemu **u-boot** and **u-boot.bin** are not neccessary file to be included in the **boot** Partition
+- Note : **due to we are working with Qemu [**u-boot** and **u-boot.bin**] are not neccessary files to be included in the **boot** Partition**
 
 
 ![WhatsApp Image 2024-07-24 at 11 33 02 PM](https://github.com/user-attachments/assets/19328a9d-99d1-4f45-8df0-5a43c3b77d85)
