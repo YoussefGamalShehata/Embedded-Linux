@@ -95,7 +95,7 @@
 
 
   ## To make the Loading more generic you can use a uboot script that gives 2 different options for Loading as follows:
-
+  **You can see it in the above script [ubootScript_Both.txt]**
 
   ![image](https://github.com/user-attachments/assets/b65c7915-a703-44d7-9b64-544a0d247d68)
 
