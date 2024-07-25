@@ -22,11 +22,32 @@
      
    ![image](https://github.com/user-attachments/assets/8b43b431-90e4-4e93-8d93-f60b4666e104)
 
- 4- Now we can Run **QEMU** from the u-boot directory using the following command:
- ```
-  qemu-system-arm –M vexpress-a9 –m 128M –nographic –kernel u-boot –sd sd.img
- ```
-     - Note: we didn't use the **-net** flag in the **QEMU** command because this method of booting is available only with booting from SD-Card
+ 4- Now we can Run **QEMU** from the u-boot directory using the following:
+
+    Note: we will not use the **-net** flag in the **QEMU** command because this method of booting is available only with booting from SD-Card and can't be used with loading from server
+
+ 
+    qemu-system-arm –M vexpress-a9 –m 128M –nographic –kernel u-boot –sd sd.img
+
+  5- After Running QEMU you are about to face a problem that is loading using **fatload** not **extlinux** that's because you need to do the following:
+  
+        ```
+        editenv bootcmd
+        edit: bootflow scan
+        ```
+        
+        ```
+        saveenv
+        ```
+        
+        Then Exit from QEMU and run it again
+
+
+  6- Here is the final result
+  
+  ![image](https://github.com/user-attachments/assets/19d6d3c4-3011-44c6-81e3-d47ace865585)
+
+  ![image](https://github.com/user-attachments/assets/ec0c5198-8d54-4c15-abd0-895db3c9a128)
 
  
     
