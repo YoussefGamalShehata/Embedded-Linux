@@ -1,4 +1,4 @@
-# Booting our vexpress_ca9 Development Board using bootflow method especially "extlinux"
+# Booting our vexpress_ca9 Development Board using bootflow method especially "extlinux" using Fake zImage and dtb file
 
 ## Thinking:
 
