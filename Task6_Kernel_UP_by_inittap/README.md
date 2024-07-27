@@ -23,17 +23,13 @@
     
 5- Need to build the busybox to generate the 3 Directories but we need to set a group of general configurations first
 
-      ```
+
       export CROSS_COMILE= <Path of Vexpress_ca9 Tool-chain>
-      ```
-      
-      ```
+
       export ARCH=arm
-      ```
-      
-      ```
+
       make menuconfig
-      ```
+
       
       - we are gonning to build it statically which prevent the busybox to create dynamic libraries in the /usr directory so we need to force this in the menuconfig as follows:
       
