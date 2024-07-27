@@ -19,10 +19,8 @@
 
     ```
     git clone https://github.com/mirror/busybox.git
-    ```
-    ```
     
-    cd busybox
+    cd busybox/
     ```
 5- Need to build the busybox to generate the 3 Directories but we need to set a group of general configurations first
 
