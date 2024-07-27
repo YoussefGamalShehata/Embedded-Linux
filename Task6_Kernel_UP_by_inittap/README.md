@@ -143,7 +143,7 @@ saveenv
 reset
 ```
 
-### Congratulations !! , You started you kerneeeeeeeel yoyoyoyoyo
+### Congratulations !! , You started your kerneeeeeeeel yoyoyoyoyo
 
       
       
