@@ -51,12 +51,12 @@ case $choice in
     1)
         mkdir -p /mnt/rootfs1
         mount -t ext4 /dev/mmcblk0p2 /mnt/rootfs1
-        chroot /mnt/rootfs1/rootfs1
+        chroot /mnt/rootfs1
         ;;
     2)
         mkdir -p /mnt/rootfs2
         mount -t ext4 /dev/mmcblk0p3 /mnt/rootfs2
-        chroot /mnt/rootfs2/rootfs2
+        chroot /mnt/rootfs2
         ;;
     *)
         echo "Wrong selection"
