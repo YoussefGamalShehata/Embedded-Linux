@@ -41,27 +41,22 @@ sudo mkfs.ext4 -L rootfs1 /dev/loop24p3
 5- Now we need to create a script that manages the booring selection as follows:
 
 ```
-#!/bin/sh
+#!/bin/bash
 echo "Select an option:"
-echo "1) rootfs_one"
-echo "2) rootfs_two"
-echo "3) quit"
-read -r choice
+echo "1) rootfs1"
+echo "2) rootfs1"
+read -p "Enter choice: " choice
 
 case $choice in
     1)
-        mkdir -p /mnt/rootfs_one
-        mount -t ext4 /dev/mmcblk0p2 /mnt/rootfs_one
-        /bin/chroot /mnt/rootfs_one
+        mkdir -p /mnt/rootfs1
+        mount -t ext4 /dev/mmcblk0p2 /mnt/rootfs1
+        chroot /mnt/rootfs1/rootfs1
         ;;
     2)
-        mkdir -p /mnt/rootfs_two
-        mount -t ext4 /dev/mmcblk0p3 /mnt/rootfs_two
-        /bin/chroot /mnt/rootfs_two
-        ;;
-    3)
-        echo "Quitting..."
-        break
+        mkdir -p /mnt/rootfs2
+        mount -t ext4 /dev/mmcblk0p3 /mnt/rootfs2
+        chroot /mnt/rootfs2/rootfs2
         ;;
     *)
         echo "Wrong selection"
@@ -103,8 +98,12 @@ mkimage -A arm -O linux -T ramdisk -d initramfs.cpio.gz uRamdisk
 ```
 - The uRamdisk file will be exist in your **rootfs1**, just copy it to the **boot** partition
 
+8- You need to edit the **rcS** script to make the boot_manager script runs automatically as follows
 
-8- **Open QEMUUU**
+![image](https://github.com/user-attachments/assets/8d14d1fe-b422-4508-b97f-19ebc1358bef)
+
+
+9- **Open QEMUUU**
 
 ```
 sudo qemu-system-arm -M vexpress-a9 -m 128M -nographic  -kernel u-boot -sd ~/Desktop/Myblock/sd.img
@@ -113,10 +112,21 @@ sudo qemu-system-arm -M vexpress-a9 -m 128M -nographic  -kernel u-boot -sd ~/Des
 ![WhatsApp Image 2024-07-28 at 5 54 24 PM](https://github.com/user-attachments/assets/305c091a-9d85-46db-98a8-bf28d3ad05ae)
 
 
-9- Now you need to Run the **boot_manager** script:
+9- The has been started and the script also launched as follows:
+
+
+![image](https://github.com/user-attachments/assets/3fdb1e9b-e6be-425d-b7de-eee0c9af5552)
+
+
+10- As the above image we have selected **2** which means that the kernel uses the **RFS** From the **rootfs2** partition to check this just use:
+
 ```
-sh boot_manager.sh
+ls
 ```
+
+![image](https://github.com/user-attachments/assets/05a01fbb-3631-4d65-b724-f22493631533)
+
+
 
 
 
