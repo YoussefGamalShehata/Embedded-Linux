@@ -1,12 +1,14 @@
-# Creating an application to be run under a certian Run Level as a daemon app (backfround)
+# Creating an application to be run under a certain Run Level as a daemon app (background)
 
 ## Thinking:
-1- As we know that SystemV is working with Run Levels concept,we need to create a dummy application that get run once the Run Level initiated 
 
-2- To do this mission we have to follow the SystemV thinking way which is will be mentioned in the process section below
+1- As we know that SystemV is working with the Run Levels concept, we need to create a dummy application that gets run once the Run Level is initiated 
+
+2- To do this mission we have to follow the SystemV thinking way which will be mentioned in the process section below
 
 ## Process:
-1- Create the **daemon application** you want as following
+1- Create the **daemon application** you want as following:
+
 ```
 mkdir ~/Desktop/MyApplication
 ```
@@ -62,15 +64,28 @@ exit 0
 
 
 4- Now you want to select a certian **Run Level** which invokes the script in **/etc/init.d/myinitialization**, for me i selected **rc5.d** as follows:
-- First go inside **rc5.d**
+
+- First, go inside **rc5.d**
 ```
 cd rc5.d
 ```
+
 - Then create the soft link to **/etc/init.d/myinitialization**
+  
 ```
 sudo ls -s ../init.d/myinitialization S01myinitialization
 ```
 
 ![WhatsApp Image 2024-08-01 at 10 33 34 AM](https://github.com/user-attachments/assets/7c1be116-01ba-4512-a040-e0614456d815)
+
+
+5- Test the application using:
+
+```
+/etc/init.d/myinitialization start
+```
+
+![WhatsApp Image 2024-08-01 at 10 33 35 AM](https://github.com/user-attachments/assets/775a6293-90c9-4bf6-a975-af5e2bb7bfde)
+
 
 
