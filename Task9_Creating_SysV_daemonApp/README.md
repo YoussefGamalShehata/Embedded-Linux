@@ -76,7 +76,7 @@ cd rc5.d
 sudo ls -s ../init.d/myinitialization S01myinitialization
 ```
 
-![WhatsApp Image 2024-08-01 at 10 33 34 AM](https://github.com/user-attachments/assets/7c1be116-01ba-4512-a040-e0614456d815)
+![WhatsApp Image 2024-08-01 at 10 54 51 AM](https://github.com/user-attachments/assets/aefb08ac-7d0b-4a2d-9e95-346d44f2be5b)
 
 
 5- Test the application using:
