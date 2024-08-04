@@ -181,7 +181,7 @@ vim Config.in
 ```
 
  - You will see the following:
- - 
+   
 
 ![WhatsApp Image 2024-08-04 at 10 56 46 AM](https://github.com/user-attachments/assets/8c0aa2c0-6fce-47e1-ab0a-a63bf2f88dc5)
 
