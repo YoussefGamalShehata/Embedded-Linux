@@ -1,0 +1,4 @@
+ping 192.168.100.1
+	tftp 0x60002000 zImage
+	tftp 0x60002500 file.dtb
+
