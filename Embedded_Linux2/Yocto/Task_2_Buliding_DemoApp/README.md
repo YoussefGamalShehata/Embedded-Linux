@@ -3,9 +3,13 @@
 ## Thinking:
 
 1- We need to get the Application's Repo link.
+
 2- Creating the Hireachy of the recipe in the layer.
+
 3- Start the implementation of the recipe.
+
 4- Run bitbake.
+
 5- Run the Application.
 
 ## Process:
