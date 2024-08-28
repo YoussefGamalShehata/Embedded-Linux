@@ -33,4 +33,6 @@ source oe-init-build-env
 ![image](https://github.com/user-attachments/assets/9a82423b-4b1d-4d1a-869d-99d90cbfbbeb)
 
 
-5- I'm going to create my distro 
+.
+.
+.
